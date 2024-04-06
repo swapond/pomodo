@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Pomodoro</title>
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/output.css" rel="stylesheet">
+
+    <meta content="" name="description">
+    <link href="/favicon.ico" rel="icon" sizes="any">
+    <!--    Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body class="bg-[#f2f4f8]">
+
+<!-- Add your site or application content here -->
+<div class="container mx-auto flex justify-center py-6 ">
+    <img alt="Pomodoro" class="w-[220px]"
+         src="img/logo.png">
+</div>
+<div class="pomodoro-container bg-[#b33939]" id="p-container">
+    <!--    button groups-->
+    <div class="flex justify-center">
+        <div class="flex justify-center">
+            <button class="pomodoro-button bg-gray-300" id="pomodoro-button">Pomodoro</button>
+        </div>
+        <div class="flex justify-center">
+            <button class="pomodoro-button" id="short_break-button">Short Break</button>
+        </div>
+        <div class="flex justify-center">
+            <button class="pomodoro-button" id="long_break-button">Long Break</button>
+        </div>
+    </div>
+    <!--    timer-->
+    <div class="flex flex-col items-center">
+        <span class="font-bold text-white text-6xl" id="timer">25 : 00</span>
+        <span class="text-white mt-4" id="completed-pomo"> 0 / 4</span>
+    </div>
+
+    <!--    start button-->
+    <div class="flex justify-center">
+        <button class="special-btn" id="start-button">Start</button>
+        <button class="ml-2 hidden" id="reset-button">
+            <svg height="28.17" viewBox="0 0 40.5 42.17" width="28.5" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <style>
+                        .a {
+                            fill: #f1f1ff;
+                        }
+                    </style>
+                </defs>
+                <title>29 Update, reset</title>
+                <path class="a"
+                      d="M29.4,2.65A20.85,20.85,0,0,0,8,3.64L4.92.59A2,2,0,0,0,1.5,2V13.18a2,2,0,0,0,2,2H14.67a2,2,0,0,0,1.42-3.42L13.81,9.48A13,13,0,1,1,7.68,26.56a2,2,0,0,0-2.43-1L1.43,26.66A2,2,0,0,0,.15,29.32,21,21,0,1,0,29.4,2.65Z"></path>
+            </svg>
+        </button>
+        <button class="ml-2 hidden" id="skip-button">
+            <svg height="28.17" version="1.1" viewBox="0 0 12 12" width="22.5px" xmlns="http://www.w3.org/2000/svg"
+            >
+                <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+                <title>skip_next</title>
+                <desc>Created with Sketch.</desc>
+                <g fill="none" fill-rule="evenodd" id="Icons" stroke="none" stroke-width="1">
+                    <g id="Rounded" transform="translate(-548.000000, -1000.000000)">
+                        <g id="AV" transform="translate(100.000000, 852.000000)">
+                            <g id="-Round-/-AV-/-skip_next" transform="translate(442.000000, 142.000000)">
+                                <g>
+                                    <rect height="24" id="Rectangle-Copy-52" width="24" x="0" y="0"></rect>
+                                    <path d="M7.58,16.89 L13.35,12.82 C13.91,12.42 13.91,11.58 13.35,11.19 L7.58,7.11 C6.91,6.65 6,7.12 6,7.93 L6,16.07 C6,16.88 6.91,17.35 7.58,16.89 Z M16,7 L16,17 C16,17.55 16.45,18 17,18 C17.55,18 18,17.55 18,17 L18,7 C18,6.45 17.55,6 17,6 C16.45,6 16,6.45 16,7 Z"
+                                          fill="#f1f1ff" id="🔹Icon-Color"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<!--description about the app-->
+<div class="container mx-auto flex justify-center py-6">
+    <div class="flex justify-center">
+        <div>
+            <p class="text-gray-700 text-lg text-center">
+                <b>Pomodo</b> is a simple pomodoro timer that helps you to keep track of your work.
+                <br>
+                <br></p>
+        </div>
+    </div>
+</div>
+
+<!--footer & credit-->
+<div class="container mx-auto flex justify-center py-6">
+    <div class="flex justify-center">
+        <div>
+            <p class="text-gray-700 text-lg text-center">
+                <b>Created by Swapon Das - All rights reserved.</b>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background: #e5e5e5 !important;
+}
+
+.pomodoro-container {
+  height: 80vh;
+  max-height: 560px;
+  background-color: #fff;
+  max-width: 750px;
+  border-radius: 8px;
+  box-shadow: rgba(184, 194, 215, 0.25) 0px 4px 6px, rgba(184, 194, 215, 0.1) 0px 5px 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin: 60px auto 60px;
+}
+
+.pomodoro-button {
+  background: #f1f1f1;
+  padding: 8px 10px;
+  margin: 0 4px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3d3d3d;
+}
+
+.special-btn {
+  background: #646464;
+  padding: 12px 38px;
+  margin: 0 4px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  border-bottom: 4px solid #4b4b4b;
+}
+
+/*# sourceMappingURL=custom.css.map */
